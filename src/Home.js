@@ -2,6 +2,8 @@ import React from 'react'
 import { Button } from 'react-bootstrap/Button';
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+const SweetAlert = require('react-bootstrap-sweetalert');
 
 
 function Home() {
@@ -12,6 +14,7 @@ function Home() {
         password: "",
     };
     const [userReg, setUserReg] = useState(adduser);
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         e.preventDefault();
@@ -24,8 +27,10 @@ function Home() {
         axios.post(`registration/userregistration`, userReg).then((response) => {
             setUserReg(response.data)
             if (response.message = "Success") {
-                alert("You Have Successfully Registered");
-                window.location.refresh();
+
+                alert("Registration Successful");
+                navigate("/Login");
+
             } else {
                 alert("Oop!!! SOmething went Wrong");
             }
@@ -33,7 +38,12 @@ function Home() {
         })
     }
 
-
+    {/* <SweetAlert
+        title={"Uses render props"}
+        onConfirm={this.onConfirm}
+        onCancel={this.onCancel}
+        dependencies={[this.state.firstName, this.state.lastName]}
+    ></SweetAlert> */}
     return (
         <div>
 
