@@ -1,3 +1,9 @@
 .navigation{background-color: brown;width: 100%;height: 100px;}
 .login-button{float: right;margin: 20px;background-color: white;padding: 3px 10px 3px 10px;color: brown;border-radius: 5px;cursor: pointer;}
 .login-button:hover{color: white;background-color: white;color: brown;cursor: pointer;padding: 5px 12px 5px 12px;}
+.login-div{box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3); width:400px;height: auto;padding: 20px;margin: 5% auto 0;background-color: #f1f1f1;}
+body{margin: 0;padding: 0;}
+.login-div input{width: 355px;height: 40px;margin: 4px;border-radius: 1px;border: none;box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3);}
+.login-div label{margin: 4px;}
+.button{margin: 10px 0px 5px 4px;}
+.btn{margin-top: 10px;margin-left: 4px;}
