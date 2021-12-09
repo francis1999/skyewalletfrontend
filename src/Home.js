@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap/Button';
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Nav from './Nav';
 const SweetAlert = require('react-bootstrap-sweetalert');
 
 
@@ -47,7 +48,7 @@ function Home() {
     return (
         <div>
 
-
+            <Nav />
             <div className="login-div">
                 <p>User Registration</p>
                 <hr />

@@ -6,4 +6,38 @@ body{margin: 0;padding: 0;}
 .login-div input{width: 355px;height: 40px;margin: 4px;border-radius: 1px;border: none;box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3);}
 .login-div label{margin: 4px;}
 .button{margin: 10px 0px 5px 4px;}
-.btn{margin-top: 10px;margin-left: 4px;}
+.btn{margin-top: 10px;margin-left: 4px;color: white;}
+.left-navigation{display: flex;justify-content: space-between;}
+.left{height: 100vh;background-color: brown;width: 20%;}
+.right{margin-top: 20px;background-color: #f1f1f1;width: 80%;}
+.dashbaord{color: white;text-align: center;font-size: 20px;background-color: chocolate;}
+.innerleft{margin: 5% auto 0;padding: 20px;}
+.btn a{color: white;text-decoration: none;padding: 5px;}
+.btn a:hover{color: white;text-decoration: none;padding: 5px;}
+.click-search{display: flex;justify-content: space-between;}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #939e9a;
+    color: white;
+  }
+
+  .searcher{font-size: 18px;}
+  .searcher input{width: 400px;margin-bottom: 30px;}

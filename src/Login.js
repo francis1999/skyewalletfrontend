@@ -3,12 +3,9 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { setUserSession } from "../src/includes/Controller";
+import Nav from './Nav';
 
 function Login() {
-    /* const initialValues = {
-        email: "",
-        password: ""
-    } */
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -43,12 +40,13 @@ function Login() {
 
     return (
         <div>
+            <Nav />
             <div className="login-div">
                 <p>User Login</p>
                 <hr />
                 <form onSubmit={handleLogin}>
                     <label>Email</label><br />
-                    <input type="text" placeholder="...Email" name="name" onChange={(e) => setEmail(e.target.value)} /><br />
+                    <input type="text" placeholder="...Email" name="email" onChange={(e) => setEmail(e.target.value)} /><br />
                     <label>Password</label><br />
                     <input type="password" placeholder="...Password" name="password" onChange={(e) => setPassword(e.target.value)} />
 
